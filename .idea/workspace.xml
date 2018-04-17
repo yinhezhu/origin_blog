@@ -1,0 +1,910 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="70a0c9e8-5478-4740-89b4-f331cc859046" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/next/source/images/apple-touch-icon-next.png" afterPath="$PROJECT_DIR$/themes/next/source/images/apple-touch-icon-next.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/next/source/images/favicon-16x16-next.png" afterPath="$PROJECT_DIR$/themes/next/source/images/favicon-16x16-next.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/next/source/images/favicon-32x32-next.png" afterPath="$PROJECT_DIR$/themes/next/source/images/favicon-32x32-next.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/next/_config.yml" afterPath="$PROJECT_DIR$/themes/next/_config.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/next/layout/_layout.swig" afterPath="$PROJECT_DIR$/themes/next/layout/_layout.swig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/next/layout/_macro/post.swig" afterPath="$PROJECT_DIR$/themes/next/layout/_macro/post.swig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/next/layout/_partials/share/baidushare.swig" afterPath="$PROJECT_DIR$/themes/next/layout/_partials/share/baidushare.swig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/next/layout/_third-party/search/localsearch.swig" afterPath="$PROJECT_DIR$/themes/next/layout/_third-party/search/localsearch.swig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/next/source/css/_common/components/pages/post-detail.styl" afterPath="$PROJECT_DIR$/themes/next/source/css/_common/components/pages/post-detail.styl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/next/source/css/_common/components/sidebar/sidebar-nav.styl" afterPath="$PROJECT_DIR$/themes/next/source/css/_common/components/sidebar/sidebar-nav.styl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/next/source/css/_common/components/sidebar/sidebar-toc.styl" afterPath="$PROJECT_DIR$/themes/next/source/css/_common/components/sidebar/sidebar-toc.styl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/next/source/css/_common/outline/outline.styl" afterPath="$PROJECT_DIR$/themes/next/source/css/_common/outline/outline.styl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/next/source/css/_schemes/Mist/_header.styl" afterPath="$PROJECT_DIR$/themes/next/source/css/_schemes/Mist/_header.styl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/next/source/css/_schemes/Mist/_menu.styl" afterPath="$PROJECT_DIR$/themes/next/source/css/_schemes/Mist/_menu.styl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/next/source/css/_schemes/Mist/_posts-expanded.styl" afterPath="$PROJECT_DIR$/themes/next/source/css/_schemes/Mist/_posts-expanded.styl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/next/source/css/_schemes/Mist/index.styl" afterPath="$PROJECT_DIR$/themes/next/source/css/_schemes/Mist/index.styl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/next/source/css/_schemes/Mist/outline/outline.styl" afterPath="$PROJECT_DIR$/themes/next/source/css/_schemes/Mist/outline/outline.styl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/next/source/css/_variables/Mist.styl" afterPath="$PROJECT_DIR$/themes/next/source/css/_variables/Mist.styl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/next/source/css/_variables/base.styl" afterPath="$PROJECT_DIR$/themes/next/source/css/_variables/base.styl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/next/source/js/src/motion.js" afterPath="$PROJECT_DIR$/themes/next/source/js/src/motion.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/next/source/js/src/post-details.js" afterPath="$PROJECT_DIR$/themes/next/source/js/src/post-details.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/next/source/lib/velocity/velocity.js" afterPath="$PROJECT_DIR$/themes/next/source/lib/velocity/velocity.js" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="_config.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/themes/next/_config.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="287">
+              <caret line="157" column="14" lean-forward="false" selection-start-line="157" selection-start-column="14" selection-end-line="157" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/categories/index.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="19">
+                <caret line="1" column="11" lean-forward="false" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/about/index.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="19">
+                <caret line="1" column="9" lean-forward="false" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/archives/index.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="19">
+                <caret line="1" column="9" lean-forward="false" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/source/tags/index.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="0">
+                <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>&lt;header</find>
+      <find>itemscope</find>
+      <find>id=&quot;header&quot;</find>
+      <find>share</find>
+      <find>hasSearch</find>
+      <find>searchFunc</find>
+      <find>local</find>
+      <find>post-category</find>
+      <find>leancloud_visitors</find>
+      <find>cloud</find>
+      <find>favi</find>
+      <find>lou</find>
+      <find>canvas</find>
+      <find>headband</find>
+      <find>.post-toc</find>
+      <find>$toc-link-hover-color</find>
+      <find>post-toc ol</find>
+      <find>perm</find>
+      <find>.sidebar-nav-active</find>
+      <find>slide</find>
+      <find>bar</find>
+      <find>addCount</find>
+      <find>header</find>
+      <find>&lt;/header</find>
+      <find>404</find>
+      <find>bling bling</find>
+      <find>canva</find>
+      <find>.sidebar-toggle-line</find>
+      <find>avatar</find>
+      <find>ico</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>100</replace>
+      <replace>250</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/themes/next/layout</dir>
+      <dir>$PROJECT_DIR$/themes/next/source/css</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/themes/next" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/themes/next/languages/en.yml" />
+        <option value="$PROJECT_DIR$/source/tags/index.md" />
+        <option value="$PROJECT_DIR$/themes/next/source/css/_common/outline/outline.styl" />
+        <option value="$PROJECT_DIR$/themes/next/source/css/_schemes/Mist/_header.styl" />
+        <option value="$PROJECT_DIR$/themes/next/layout/_macro/page-end-tag.swig" />
+        <option value="$PROJECT_DIR$/source/_posts/hello-world.md" />
+        <option value="$PROJECT_DIR$/source/_posts/测试.md" />
+        <option value="$PROJECT_DIR$/themes/next/source/css/_schemes/Mist/_menu.styl" />
+        <option value="$PROJECT_DIR$/themes/next/source/css/_schemes/Mist/index.styl" />
+        <option value="$PROJECT_DIR$/themes/next/source/css/_variables/Mist.styl" />
+        <option value="$PROJECT_DIR$/themes/next/source/css/_schemes/Mist/_posts-expanded.styl" />
+        <option value="$PROJECT_DIR$/themes/next/source/css/_schemes/Mist/outline/outline.styl" />
+        <option value="$PROJECT_DIR$/themes/next/source/js/src/post-details.js" />
+        <option value="$PROJECT_DIR$/themes/next/source/lib/velocity/velocity.js" />
+        <option value="$PROJECT_DIR$/themes/next/source/js/src/motion.js" />
+        <option value="$PROJECT_DIR$/themes/next/layout/_macro/passage-end-tag.swig" />
+        <option value="$PROJECT_DIR$/themes/next/layout/_partials/share/baidushare.swig" />
+        <option value="$PROJECT_DIR$/themes/next/layout/_partials/header.swig" />
+        <option value="$PROJECT_DIR$/themes/next/layout/_third-party/search/localsearch.swig" />
+        <option value="$PROJECT_DIR$/themes/next/layout/_scripts/lean-analytics.swig" />
+        <option value="$PROJECT_DIR$/_config.yml" />
+        <option value="$PROJECT_DIR$/themes/next/languages/zh-Hans.yml" />
+        <option value="$PROJECT_DIR$/themes/next/layout/_macro/post.swig" />
+        <option value="$PROJECT_DIR$/themes/next/layout/_layout.swig" />
+        <option value="$PROJECT_DIR$/themes/next/source/css/_variables/base.styl" />
+        <option value="$PROJECT_DIR$/themes/next/source/css/_common/components/sidebar/sidebar-toc.styl" />
+        <option value="$PROJECT_DIR$/themes/next/source/css/_common/components/sidebar/sidebar-nav.styl" />
+        <option value="$PROJECT_DIR$/themes/next/source/404.html" />
+        <option value="$PROJECT_DIR$/source/404/index.md" />
+        <option value="$PROJECT_DIR$/source/404.html" />
+        <option value="$PROJECT_DIR$/themes/next/source/css/_common/components/pages/post-detail.styl" />
+        <option value="$PROJECT_DIR$/themes/next/_config.yml" />
+        <option value="$PROJECT_DIR$/source/categories/index.md" />
+        <option value="$PROJECT_DIR$/source/archives/index.md" />
+        <option value="$PROJECT_DIR$/source/about/index.md" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/node_modules" />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-1920" />
+    <option name="y" value="-756" />
+    <option name="width" value="1777" />
+    <option name="height" value="983" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>CSS</id>
+          </State>
+          <State>
+            <id>General</id>
+          </State>
+          <State>
+            <id>Internationalization issues</id>
+          </State>
+          <State>
+            <id>Invalid elementsCSS</id>
+          </State>
+          <State>
+            <id>XPath</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>InjectedReferences</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="/usr/local/lib/node_modules/eslint" />
+    <property name="SearchEverywhereHistoryKey" value="local&#9;FILE&#9;file:///Users/yinhezhu/work/github/blog/themes/next/layout/_third-party/search/localsearch.swig&#10;search.swig&#9;FILE&#9;file:///Users/yinhezhu/work/github/blog/themes/next/layout/_partials/search.swig" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/source" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/source" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>$USER_HOME$/.subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="70a0c9e8-5478-4740-89b4-f331cc859046" name="Default" comment="" />
+      <created>1523603391199</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1523603391199</updated>
+      <workItem from="1523603393229" duration="33666000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="33666000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-1920" y="-756" width="1777" height="983" extended-state="0" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20159453" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3783784" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/themes/next/source/css/_variables/Pisces.styl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="14" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/next/source/css/_schemes/Pisces/_menu.styl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="50" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/next/source/css/_schemes/Gemini/index.styl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="684">
+          <caret line="36" column="13" lean-forward="false" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/next/source/css/_variables/Gemini.styl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/next/source/css/_schemes/Mist/_posts-expanded.styl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="30" lean-forward="true" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/next/source/css/_variables/Mist.styl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/next/source/css/main.styl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="18" column="6" lean-forward="false" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/next/source/css/_schemes/Mist/outline/outline.styl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="45" lean-forward="false" selection-start-line="0" selection-start-column="45" selection-end-line="0" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/next/source/css/_schemes/Mist/_base.styl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/next/source/css/_schemes/Mist/_header.styl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="1" lean-forward="false" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/next/source/css/_common/components/header/header.styl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="1" lean-forward="false" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/next/source/css/_common/outline/outline.styl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="20" column="25" lean-forward="false" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/next/source/css/_schemes/Mist/index.styl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/landscape/source/fancybox/jquery.fancybox.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="1697" column="39" lean-forward="false" selection-start-line="1697" selection-start-column="39" selection-end-line="1697" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/next/source/js/src/schemes/pisces.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="23" column="10" lean-forward="false" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_posts/测试.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="114">
+            <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/next/source/js/src/motion.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="258" column="10" lean-forward="true" selection-start-line="258" selection-start-column="10" selection-end-line="258" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/next/source/lib/velocity/velocity.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2100">
+          <caret line="595" column="42" lean-forward="false" selection-start-line="595" selection-start-column="42" selection-end-line="595" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/next/source/js/src/post-details.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="36" column="48" lean-forward="true" selection-start-line="36" selection-start-column="48" selection-end-line="36" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/next/layout/_macro/passage-end-tag.swig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="25" lean-forward="false" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/next/layout/_partials/share/baidushare.swig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="874">
+          <caret line="46" column="16" lean-forward="false" selection-start-line="46" selection-start-column="16" selection-end-line="46" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/next/source/images/apple-touch-icon-next.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/next/source/images/favicon-16x16-next.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/src/algolia-search.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/next/layout/_third-party/search/index.swig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="12" lean-forward="false" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/next/layout/_partials/search/localsearch.swig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/next/layout/page.swig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="24" column="33" lean-forward="false" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/next/layout/_partials/page-header.swig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/next/layout/_partials/header.swig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="61" column="35" lean-forward="false" selection-start-line="61" selection-start-column="35" selection-end-line="61" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/next/layout/_partials/search.swig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="21" lean-forward="false" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/next/layout/_third-party/search/localsearch.swig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="67" column="66" lean-forward="true" selection-start-line="67" selection-start-column="66" selection-end-line="67" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/next/languages/zh-Hans.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="32" column="16" lean-forward="false" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/next/layout/_scripts/lean-analytics.swig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1121">
+          <caret line="59" column="68" lean-forward="false" selection-start-line="59" selection-start-column="68" selection-end-line="59" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/next/layout/_macro/post.swig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8">
+          <caret line="224" column="44" lean-forward="false" selection-start-line="224" selection-start-column="44" selection-end-line="224" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1159">
+          <caret line="61" column="48" lean-forward="false" selection-start-line="61" selection-start-column="48" selection-end-line="61" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/next/layout/_layout.swig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="24" column="819" lean-forward="false" selection-start-line="24" selection-start-column="819" selection-end-line="24" selection-end-column="819" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/next/source/css/_variables/base.styl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="306" column="0" lean-forward="false" selection-start-line="306" selection-start-column="0" selection-end-line="306" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/next/source/css/_common/components/sidebar/sidebar-toc.styl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="40" column="44" lean-forward="false" selection-start-line="40" selection-start-column="44" selection-end-line="40" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/next/source/css/_common/components/sidebar/sidebar-nav.styl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="10" column="18" lean-forward="false" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/404/index.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="76">
+            <caret line="4" column="20" lean-forward="false" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/404/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="1091" column="0" lean-forward="false" selection-start-line="1091" selection-start-column="0" selection-end-line="1091" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/next/layout/_third-party/analytics/lean-analytics.swig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-410">
+          <caret line="47" column="13" lean-forward="false" selection-start-line="47" selection-start-column="13" selection-end-line="47" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/404.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2476">
+          <caret line="317" column="0" lean-forward="false" selection-start-line="317" selection-start-column="0" selection-end-line="317" selection-end-column="0" />
+          <folding>
+            <marker date="1523881022728" expanded="true" signature="8286:8307" ph="..." />
+            <marker date="1523881022728" expanded="true" signature="8286:8339" ph="..." />
+            <marker date="1523881022728" expanded="true" signature="8286:8363" ph="..." />
+            <marker date="1523881022728" expanded="true" signature="8286:8382" ph="..." />
+            <marker date="1523881022728" expanded="true" signature="8286:8428" ph="..." />
+            <marker date="1523881022728" expanded="true" signature="8286:9196" ph="..." />
+            <marker date="1523881022728" expanded="true" signature="8286:9196" ph="..." />
+            <marker date="1523881022728" expanded="true" signature="8286:9196" ph="..." />
+            <marker date="1523881022728" expanded="true" signature="8286:29341" ph="..." />
+            <marker date="1523881022728" expanded="true" signature="8482:8767" ph="..." />
+            <marker date="1523881022728" expanded="true" signature="8525:8758" ph="..." />
+            <marker date="1523881022728" expanded="true" signature="8807:9196" ph="..." />
+            <marker date="1523881022728" expanded="true" signature="8844:9196" ph="..." />
+            <marker date="1523881022728" expanded="true" signature="8939:9196" ph="..." />
+            <marker date="1523881022728" expanded="true" signature="8975:9196" ph="..." />
+            <marker date="1523881022728" expanded="true" signature="9090:9196" ph="..." />
+            <marker date="1523881022728" expanded="true" signature="9166:9196" ph="..." />
+            <marker date="1523881022728" expanded="true" signature="9495:10506" ph="..." />
+            <marker date="1523881022728" expanded="true" signature="9570:9805" ph="..." />
+            <marker date="1523881022728" expanded="true" signature="9622:9784" ph="..." />
+            <marker date="1523881022728" expanded="true" signature="9928:10146" ph="..." />
+            <marker date="1523881022728" expanded="true" signature="9978:10125" ph="..." />
+            <marker date="1523881022728" expanded="true" signature="10263:10475" ph="..." />
+            <marker date="1523881022728" expanded="true" signature="10307:10454" ph="..." />
+            <marker date="1523881022728" expanded="true" signature="10587:11179" ph="..." />
+            <marker date="1523881022728" expanded="true" signature="10658:10866" ph="..." />
+            <marker date="1523881022728" expanded="true" signature="10748:10840" ph="..." />
+            <marker date="1523881022728" expanded="true" signature="10937:11143" ph="..." />
+            <marker date="1523881022728" expanded="true" signature="11023:11117" ph="..." />
+            <marker date="1523881022728" expanded="true" signature="11397:11719" ph="..." />
+            <marker date="1523881022728" expanded="true" signature="11430:11705" ph="..." />
+            <marker date="1523881022728" expanded="true" signature="11462:11658" ph="..." />
+            <marker date="1523881022728" expanded="false" signature="11463:11469" ph="©" />
+            <marker date="1523881022728" expanded="true" signature="11538:11579" ph="..." />
+            <marker date="1523881022728" expanded="true" signature="11757:11818" ph="..." />
+            <marker date="1523881022728" expanded="true" signature="11876:11997" ph="..." />
+            <marker date="1523881022728" expanded="true" signature="13236:25842" ph="..." />
+            <marker date="1523881022728" expanded="true" signature="13401:13442" ph="{...}" />
+            <marker date="1523881022728" expanded="true" signature="13480:13508" ph="{...}" />
+            <marker date="1523881022728" expanded="true" signature="13612:13842" ph="{...}" />
+            <marker date="1523881022728" expanded="true" signature="13873:14296" ph="{...}" />
+            <marker date="1523881022728" expanded="true" signature="14381:25213" ph="{...}" />
+            <marker date="1523881022728" expanded="true" signature="14828:25205" ph="{&quot;url&quot;: path...}" />
+            <marker date="1523881022728" expanded="true" signature="14943:25197" ph="{...}" />
+            <marker date="1523881022728" expanded="true" signature="14955:15038" ph="//..." />
+            <marker date="1523881022728" expanded="true" signature="15177:15363" ph="{...}" />
+            <marker date="1523881022728" expanded="true" signature="15198:15350" ph="{...}" />
+            <marker date="1523881022728" expanded="true" signature="15549:24661" ph="{...}" />
+            <marker date="1523881022728" expanded="true" signature="15707:15763" ph="{...}" />
+            <marker date="1523881022728" expanded="true" signature="15837:23506" ph="{...}" />
+            <marker date="1523881022728" expanded="true" signature="15923:23491" ph="{...}" />
+            <marker date="1523881022728" expanded="true" signature="16518:17805" ph="{...}" />
+            <marker date="1523881022728" expanded="true" signature="16573:17575" ph="{...}" />
+            <marker date="1523881022728" expanded="true" signature="16646:17336" ph="{...}" />
+            <marker date="1523881022728" expanded="true" signature="16738:16798" ph="{...}" />
+            <marker date="1523881022728" expanded="true" signature="16913:17040" ph="{...}" />
+            <marker date="1523881022728" expanded="true" signature="17123:17278" ph="{...}" />
+            <marker date="1523881022728" expanded="true" signature="17654:17787" ph="{...}" />
+            <marker date="1523881022728" expanded="true" signature="17876:23475" ph="{...}" />
+            <marker date="1523881022728" expanded="true" signature="18008:18390" ph="{...}" />
+            <marker date="1523881022728" expanded="true" signature="18072:18368" ph="{...}" />
+            <marker date="1523881022728" expanded="true" signature="18142:18238" ph="{...}" />
+            <marker date="1523881022728" expanded="true" signature="18244:18346" ph="{...}" />
+            <marker date="1523881022728" expanded="true" signature="18506:19897" ph="{...}" />
+            <marker date="1523881022728" expanded="true" signature="18822:19598" ph="{...}" />
+            <marker date="1523881022728" expanded="true" signature="18871:18946" ph="{...}" />
+            <marker date="1523881022728" expanded="true" signature="19222:19576" ph="{...}" />
+            <marker date="1523881022728" expanded="true" signature="19420:19486" ph="{...}" />
+            <marker date="1523881022728" expanded="true" signature="19492:19552" ph="{...}" />
+            <marker date="1523881022728" expanded="true" signature="19689:19876" ph="{&quot;hits&quot;: hits...}" />
+            <marker date="1523881022728" expanded="true" signature="19989:20104" ph="{...}" />
+            <marker date="1523881022728" expanded="true" signature="20203:20955" ph="{...}" />
+            <marker date="1523881022728" expanded="true" signature="20542:20598" ph="{...}" />
+            <marker date="1523881022728" expanded="true" signature="20653:20728" ph="{...}" />
+            <marker date="1523881022728" expanded="true" signature="20773:20840" ph="{...}" />
+            <marker date="1523881022728" expanded="true" signature="21113:21579" ph="{...}" />
+            <marker date="1523881022728" expanded="true" signature="21197:21305" ph="{...}" />
+            <marker date="1523881022728" expanded="true" signature="21365:21465" ph="{...}" />
+            <marker date="1523881022728" expanded="true" signature="21471:21559" ph="{...}" />
+            <marker date="1523881022728" expanded="true" signature="21725:21822" ph="{...}" />
+            <marker date="1523881022728" expanded="true" signature="21931:22491" ph="{...}" />
+            <marker date="1523881022728" expanded="true" signature="22071:22368" ph="{...}" />
+            <marker date="1523881022728" expanded="true" signature="22582:22755" ph="{...}" />
+            <marker date="1523881022728" expanded="true" signature="22761:22898" ph="{...}" />
+            <marker date="1523881022728" expanded="true" signature="22959:23179" ph="{...}" />
+            <marker date="1523881022728" expanded="true" signature="23259:23455" ph="{&quot;id&quot;: resultItems.length...}" />
+            <marker date="1523881022728" expanded="true" signature="23569:23685" ph="{...}" />
+            <marker date="1523881022728" expanded="true" signature="23721:23838" ph="{...}" />
+            <marker date="1523881022728" expanded="true" signature="23844:24649" ph="{...}" />
+            <marker date="1523881022728" expanded="true" signature="23912:24338" ph="{...}" />
+            <marker date="1523881022728" expanded="true" signature="23994:24096" ph="{...}" />
+            <marker date="1523881022728" expanded="true" signature="24152:24240" ph="{...}" />
+            <marker date="1523881022728" expanded="true" signature="24246:24322" ph="{...}" />
+            <marker date="1523881022728" expanded="true" signature="24467:24533" ph="{...}" />
+            <marker date="1523881022728" expanded="true" signature="24696:24774" ph="{...}" />
+            <marker date="1523881022728" expanded="true" signature="24780:25028" ph="{...}" />
+            <marker date="1523881022728" expanded="true" signature="24903:25014" ph="{...}" />
+            <marker date="1523881022728" expanded="true" signature="24945:25000" ph="{...}" />
+            <marker date="1523881022728" expanded="true" signature="25297:25484" ph="{...}" />
+            <marker date="1523881022728" expanded="true" signature="25357:25437" ph="{...}" />
+            <marker date="1523881022728" expanded="true" signature="25443:25477" ph="{...}" />
+            <marker date="1523881022728" expanded="true" signature="25568:25602" ph="{...}" />
+            <marker date="1523881022728" expanded="true" signature="25650:25829" ph="{...}" />
+            <marker date="1523881022728" expanded="true" signature="25790:25823" ph="{...}" />
+            <marker date="1523881022728" expanded="true" signature="26045:29405" ph="..." />
+            <marker date="1523881022728" expanded="true" signature="26078:27325" ph="{...}" />
+            <marker date="1523881022728" expanded="true" signature="26227:26287" ph="{...}" />
+            <marker date="1523881022728" expanded="true" signature="26384:27196" ph="{...}" />
+            <marker date="1523881022728" expanded="true" signature="26488:26578" ph="{...}" />
+            <marker date="1523881022728" expanded="true" signature="26631:26877" ph="{...}" />
+            <marker date="1523881022728" expanded="true" signature="26928:27186" ph="{...}" />
+            <marker date="1523881022728" expanded="true" signature="27126:27174" ph="{...}" />
+            <marker date="1523881022728" expanded="true" signature="27237:27317" ph="{...}" />
+            <marker date="1523881022728" expanded="true" signature="27358:29152" ph="{...}" />
+            <marker date="1523881022728" expanded="true" signature="27605:29144" ph="{...}" />
+            <marker date="1523881022728" expanded="true" signature="27642:29024" ph="{...}" />
+            <marker date="1523881022728" expanded="true" signature="27678:28229" ph="{...}" />
+            <marker date="1523881022728" expanded="true" signature="27829:28215" ph="{...}" />
+            <marker date="1523881022728" expanded="true" signature="27872:28039" ph="{...}" />
+            <marker date="1523881022728" expanded="true" signature="28087:28201" ph="{...}" />
+            <marker date="1523881022728" expanded="true" signature="28235:29014" ph="{...}" />
+            <marker date="1523881022728" expanded="true" signature="28293:28306" ph="/*...*/" />
+            <marker date="1523881022728" expanded="true" signature="28478:28495" ph="/*...*/" />
+            <marker date="1523881022728" expanded="true" signature="28653:29000" ph="{...}" />
+            <marker date="1523881022728" expanded="true" signature="28699:28869" ph="{...}" />
+            <marker date="1523881022728" expanded="true" signature="28920:28986" ph="{...}" />
+            <marker date="1523881022728" expanded="true" signature="29057:29136" ph="{...}" />
+            <marker date="1523881022728" expanded="true" signature="29171:29392" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/404.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/next/source/css/_common/components/sidebar/sidebar-toggle.styl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/next/source/css/_common/components/pages/post-detail.styl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/next/_config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="157" column="14" lean-forward="false" selection-start-line="157" selection-start-column="14" selection-end-line="157" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/about/index.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="19">
+            <caret line="1" column="9" lean-forward="false" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/categories/index.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="19">
+            <caret line="1" column="11" lean-forward="false" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/archives/index.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="19">
+            <caret line="1" column="9" lean-forward="false" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/tags/index.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
