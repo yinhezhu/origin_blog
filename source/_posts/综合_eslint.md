@@ -1,0 +1,196 @@
+---
+title: eslint使用与配置
+date: 2018-04-17 14:10:59
+tags: ['工具配置', eslint]
+category: "综合"
+---
+
+## 简介
+ESLint 由 JavaScript 红宝书 作者 Nicholas C. Zakas 编写， 2013 年发布第一个版本。 NCZ 的初衷不是重复造一个轮子，而是在实际需求得不到 JSHint 团队响应的情况下做出的选择：以可扩展、每条规则独立、不内置编码风格为理念编写一个 lint 工具。
+[官网](https://eslint.org/)
+
+### 特点
+1. 默认规则包含所有 JSLint、JSHint 中存在的规则，易迁移；
+2. 规则可配置性高：可设置「警告」、「错误」两个 error 等级，或者直接禁用；
+3. 包含代码风格检测的规则（可以丢掉 JSCS 了）；
+4. 支持插件扩展、自定义规则。
+
+### `.eslintrc.js`文件配置
+
+```js
+module.exports = {
+    /* 运行环境 */
+    /* 所有运行环境可查询https://eslint.org/docs/user-guide/configuring#specifying-environments */
+    "env": {
+        "browser": true,
+        "es6": true
+    },
+
+    /* 支持的语法规则 */
+    "parserOptions": {
+        "ecmaVersion": 6, // 3、5(默认)、6
+        "sourceType": "module",
+        "ecmaFeatures": { // 表示一些附加特性的对象
+            "jsx": true,
+            "modules": true,
+            "experimentalObjectRestSpread": true
+        }
+    },
+
+    /* 第三方插件 */
+    /* 需要安装 eslint-plugin-vue */
+    "plugins": ["vue"],
+
+    /* 规则 */
+    /* error => 2; warn => 1; off => 0 */
+    "rules": {
+        /* 缩进 tab */
+        "indent": [
+            "error",
+            4,
+            {
+                "SwitchCase": 1
+            }
+        ],
+        /* 使用单引号 */
+        "quotes": [
+            "error",
+            "single"
+        ],
+        /* 分号必须 */
+        "semi": [
+            "error",
+            "always"
+        ],
+        /* 函数不允许有重复的参数 */
+        "no-dupe-args": "error",
+        /* 不允许有多余的分号 */
+        "no-extra-semi": "error",
+        /* 不允许有多余的空格 */
+        "no-multi-spaces": "error",
+        /* 禁止变量重复声明 */
+        "no-redeclare": "error",
+        /* 禁止未使用的变量 */
+        "no-unused-vars": "error",
+        /**
+         * 逗号前不可以有空格，逗号后必须有空格。
+         * 变量声明：
+         * ✅var a = 1, b = 2
+         * 数组：
+         * ✅[1, 2]
+         * 对象：
+         * ✅{a: 1, b: 2}
+         * 函数参数：
+         * ✅function (a, b) {}
+         * ✅fn(1, 2)
+         */
+        "comma-spacing": [
+            "error",
+            {
+                "before": false,
+                "after": true
+            }
+        ],
+        /**
+         * 调用函数时，禁止函数名称与括号间的间隔
+         * ❎：fn ()
+         * ✅：fn()
+         */
+        "func-call-spacing": "error",
+        /**
+         * 对象字面量冒号前不允许有空格，冒号后必须且只有一个空格
+         * ✅：{a: 1}
+         * ✅：{
+         *         a: 1,
+         *         b: 2
+         *     }
+         */
+        "key-spacing": [
+            "error",
+            {
+                "beforeColon": false,
+                "afterColon": true,
+                "mode": "strict"
+            }
+        ],
+        /**
+         * 关键字前后各至少一个空格，包括的关键字查看：
+         * http://eslint.org/docs/rules/keyword-spacing#rule-details
+         */
+        "keyword-spacing": [
+            "error",
+        ],
+        /**
+         * 变量声明后强制一个空行，生命变量包括使用 var let const 等
+         */
+        "newline-after-var": "error",
+        // 语句块前必须要有空格，语句块只得就是花括号 {}
+        "space-before-blocks": "error",
+        /**
+         * function 关键之与后边第一个圆括号之间必须有空格。包括：匿名函数、命名函数、async修饰的箭头函数
+         * ✅：function () {}
+         * ✅：function set () {}
+         * ✅：class Foo {
+         *          constructor () {
+         *               // ...
+         *          }
+         *     }
+         * ✅：let foo = {
+         *         bar () {
+         *               // ...
+         *         }
+         *     };
+         * ✅：let foo = async (a) => await a
+         */
+        "space-before-function-paren": [
+            "error",
+            {
+                "anonymous": "always",
+                "named": "always",
+                "asyncArrow": "always"
+            }
+        ],
+        // 多元运算符前后要有空格
+        "space-infix-ops": "error",
+        /**
+         * 一元关键字运算符(操作符)后必须有空格：new, delete, typeof, void, yield 等
+         * 一元运算符前后不能有空格如：-, +, --, ++, !, !! 等
+         * ✅：new Foo();
+         * ✅：++foo;
+         * ✅：foo--;
+         * ✅：-foo;
+         * ✅：+"3";
+         */
+        "space-unary-ops": [
+            "error",
+            {
+                "words": true,
+                "nonwords": false
+            }
+        ],
+
+        // ================================ 以下是 ES6 规范 ================================
+
+        /**
+         * 箭头函数中的箭头前后必须各有一个空格
+         * ✅：() => 1
+         */
+        "arrow-spacing": "error",
+        /**
+         * 继承时子类的 constructor 方法中必须调用 super 方法
+         * ✅：class A extends B {
+         *         constructor() {
+         *             super();
+         *         }
+         *     }
+         */
+        "constructor-super": "error",
+        // 不允许给常量(const)赋值
+        "no-const-assign": "error",
+        // 在 constructor 中不允许在 super 方法被调用之前调用 this 或 super 关键字
+        "no-this-before-super": "error",
+        // 不允许使用 var 声明变量，使用 let 或 const 代替
+        "no-var": "error"
+    }
+}
+```
