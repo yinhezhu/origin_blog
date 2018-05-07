@@ -1,5 +1,5 @@
 ---
-title: eslint使用与配置
+title: 综合-eslint使用与配置
 date: 2018-04-17 14:10:59
 tags: ['工具配置', eslint]
 category: "综合"

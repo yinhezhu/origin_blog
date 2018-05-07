@@ -1,5 +1,5 @@
 ---
-title: 文档模式《!DOCTYPE》
+title: 综合-文档模式《!DOCTYPE》
 date: 2018-04-17 14:48:59
 tags: [基础知识,DOCTYPE]
 category: "综合"

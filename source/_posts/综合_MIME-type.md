@@ -1,5 +1,5 @@
 ---
-title: MIME type
+title: 综合-MIME type
 date: 2018-04-17 14:56:54
 tags: ["基础知识",MIME]
 category: "综合"
