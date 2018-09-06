@@ -1,11 +1,17 @@
 ---
 title: Vue_vue源码分析_原型&全局API
-date: 2018-04-17 16:32:04
+date: 2018-05-10 16:32:04
 tags: [Vue,源码]
 category: "Vue"
 ---
-看过很多关于`Vue`源码的文章，想自己技术栈很重要的一环就是`Vue`，所以就想自己也写一篇关于`Vue`源码的文章。这是我关于`Vue`源码分析的第一篇文章，主要是讲述构造函数`Vue`原型上的方法，全局API。并不涉及每个具体细节的实现，具体细节后边的文章中会陆续涉及。
+
+# 前端架构之路，好胆你就来。
+
+看过很多关于`Vue`源码的文章，觉得自己技术栈很重要的一环就是`Vue`，所以就想自己也写一篇关于`Vue`源码的文章。
+这是我关于`Vue`源码分析的第一篇文章，主要是讲的是构造函数`Vue`原型上的方法，全局API。并不涉及编译过程、数据绑定、路由实现、store数据仓库等每个细节的具体实现，具体实现细节后边的文章中会陆续涉及。
 本文章讲解的源码是基于`Vue 2.5.13`的。因为自己的业务线需要使用`Vue.compiler`，并且我做的项目是web客户端渲染，所以这里只讲解`with-compiler`的版本。
+
+了解一项工程首先要从目录结构以及入口文件开始了解。就像你了解一个姑娘，应该以她为中心辐射她的社交圈一样。
 
 ## 入口文件
 `Vue`的源码是一个标准的`npm`工程目录结构，目录结构如下
@@ -38,6 +44,8 @@ category: "Vue"
 │   ├── shared ---------------------------- 包含整个代码库通用的代码
 ├── package.json -------------------------- 不解释
 ```
+
+### entry-runtime-with-compiler.js
 我们看到独立构建版本的入口，是`entry-runtime-with-compiler.js`,所以我们从这个文件入手。
 ```javascript
 // 引入Vue
@@ -64,6 +72,7 @@ export default Vue
 - 2、在Vue上挂载了全局方法compile
 - 3、`Vue`是从`/src/platforms/web/runtime/index.js`引入的，我们查看这个文件
 
+### /src/platforms/web/runtime/index.js
 ```javascript
 import Vue from 'core/index'
 
@@ -94,6 +103,7 @@ export default Vue
 - 2、设置了全局属性`Vue.config`
 - 3、`Vue`是从`/src/core/index.js`引入的，我们查看这个文件
 
+### /src/core/index.js
 ```javascript
 import Vue from './instance/index'
 import { initGlobalAPI } from './global-api/index'
@@ -128,6 +138,7 @@ export default Vue
 - 3、添加全局属性`FunctionalRenderContext`
 - 4、`Vue`是从`/src/core/instance/index.js`引入的，我们查看这个文件
 
+### /src/core/instance/index.js
 ```javascript
 import { initMixin } from './init'
 import { stateMixin } from './state'
@@ -162,8 +173,14 @@ renderMixin(Vue)
 
 export default Vue
 ```
-- 我们终于看到构造函数`Vue`的庐山真面目了，真实众里寻他千百度，蓦然回首。
-- 除了声明了`Vue`构造函数，这里还分别调用了`initMixin(Vue); stateMixin(Vue); eventsMixin(Vue); lifecycleMixin(Vue); renderMixin(Vue)`，他们的作用是向`Vue`原型上安装方法。具体安装哪些后边用图示说明
+- 我们终于看到构造函数`Vue`的庐山真面目了，众里寻他千百度，蓦然回首。
+- 除了声明了`Vue`构造函数，这里还分别调用了
+    - `initMixin(Vue);`
+    - `stateMixin(Vue);`
+    - `eventsMixin(Vue);`
+    - `lifecycleMixin(Vue);`
+    - `renderMixin(Vue)`
+- 他们的作用是向`Vue`原型上安装方法。具体安装哪些后边用图示说明
 - 值得注意的是，在`renderMixin(Vue)`中还安装了好几个的原型方法，用于渲染VNode相关操作。
 
 > 至此，`Vue`的构造函数创建过程就完成了，用一张图来表示整个`Vue`的原型方法，全局API的安装过程
@@ -173,3 +190,6 @@ export default Vue
 ## 经过这一系列的骚操作，Vue就是这个样子了
 
 <img src="/static/img/Vue123.svg" width="880" />
+
+## 总结
+如果你也想写一个大的框架的话，在最新的标准`es2015`下，你可以借鉴`Vue`的写法，分层次给构造函数添加原型方法以及全局API。利用策略模式分离可变和不变逻辑。

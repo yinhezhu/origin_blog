@@ -12,7 +12,7 @@ category: "ECMA"
   ECMAScript 2015 新增:Symbol(创建后独一无二且不可变的数据类型 )
 ```
 ### 变量类型区别
-栈：原始数据类型（Undefined，Null，Boolean，Number、String）<br />
+栈：原始数据类型（`Undefined`，`Null`，`Boolean`，`Number`、`String`）<br />
 堆：引用数据类型（对象、数组和函数）
 
 <p class="tip">两种类型的区别是：存储位置不同；
@@ -22,32 +22,32 @@ category: "ECMA"
 ![](http://ou3l58em5.bkt.clouddn.com/varHeap.gif)
 
 ### 判断变量类型
-#### 1、```typeof ```
-> ```typeof ``` 操作符返回的是类型字符串，它的返回值有6种取值：
+#### 1、`typeof `
+> `typeof ` 操作符返回的是类型字符串，它的返回值有6种取值：
 
-```js
+```javascript
 typeof 3 // "number"
 typeof "abc" // "string"
 typeof {} // "object"
 typeof true // "boolean"
 typeof undefined // "undefined"
-typeof function(){} // "function"
+typeof function () {} // "function"
 typeof null // "object""
 typeof [] // "object"
 ```
-#### 2、```instanceof```
-> ```instanceof```操作符用于检查某个对象的原型链是否包含某个构造函数的```prototype```属性。例如：
+#### 2、`instanceof`
+> `instanceof`操作符用于检查某个对象的原型链是否包含某个构造函数的`prototype`属性。例如：
 
-```js
+```javascript
 [1, 2, 3] instanceof Array // true
 /abc/ instanceof RegExp // true
 ({}) instanceof Object // true
 (function(){}) instanceof Function // true
 (new Date) instanceof Date // true
 ```
-> ``instanceof``对基本数据类型不起作用，因为基本数据类型没有原型链。
+> `instanceof`对基本数据类型不起作用，因为基本数据类型没有原型链。
 
-```js
+```javascript
 3 instanceof Number // false
 true instanceof Boolean // false
 'abc' instanceof String // false
@@ -55,10 +55,10 @@ null instanceof XXX  // always false
 undefined instanceof XXX  // always false
 ```
 
-#### 3、```toString```
-> ```toString```方法是最为可靠的类型检测手段，它会将当前对象转换为字符串并输出。 ```toString```属性定义在```Object.prototype```上，因而所有对象都拥有```toString```方法。 但```Array```, ```Date```等对象会重写从```Object.prototype```继承来的```toString```， 所以最好用```Object.prototype.toString```来检测类型。
+#### 3、`toString`
+> `toString`方法是最为可靠的类型检测手段，它会将当前对象转换为字符串并输出。 `toString`属性定义在`Object.prototype`上，因而所有对象都拥有`toString`方法。 但`Array`, `Date`等对象会重写从`Object.prototype`继承来的`toString`， 所以最好用`Object.prototype.toString`来检测类型。
 
-```js
+```javascript
 toString = Object.prototype.toString;
 
 toString.call(new Date);    // [object Date]
@@ -73,32 +73,32 @@ toString.call(undefined);   // [object Undefined]
 toString.call(null);        // [object Null]
 ```
 ### 总结
-* ```typeof```只能检测基本数据类型，对于```null```还有Bug；
-* ```instanceof```适用于检测对象，它是基于原型链运作的；
-* ```constructor```指向的是最初创建者，而且容易伪造，不适合做类型判断；
-* ```toString```适用于ECMA内置JavaScript类型（包括基本数据类型和内置对象）的类型判断；
-* 基于引用判等的类型检查都有跨窗口问题，比如```instanceof```和```constructor```。
+* `typeof`只能检测基本数据类型，对于`null`还有Bug；
+* `instanceof`适用于检测对象，它是基于原型链运作的；
+* `constructor`指向的是最初创建者，而且容易伪造，不适合做类型判断；
+* `toString`适用于ECMA内置JavaScript类型（包括基本数据类型和内置对象）的类型判断；
+* 基于引用判等的类型检查都有跨窗口问题，比如`instanceof`和`constructor`。
 
-<p class="tip">总之，如果你要判断的是基本数据类型或JavaScript内置对象，使用```toString```； 如果要判断的时自定义类型，请使用```instanceof```</p>
+<p class="tip">总之，如果你要判断的是基本数据类型或JavaScript内置对象，使用`toString`； 如果要判断的时自定义类型，请使用`instanceof`</p>
 
 * 另外Duck Typing的方式也非常可行
-```js
+```javascript
 isWindow:  function (obj) {
     return obj && typeof obj === 'object' && "setInterval" in obj;
 }
 ```
 
 ## 二、变量作用域
-JavaScript语言提供了函数作用域，同时JavaScript允许嵌套的函数定义。 有趣的是，内部函数（inner function）的生命周期可能超过父级函数。 这时便会显示出JavaScript的一个特殊现象：闭包。 闭包为面向对象编程提供了另外一种有趣的封装方式，我们无需为私有变量声明```private```。
+JavaScript语言提供了函数作用域，同时JavaScript允许嵌套的函数定义。 有趣的是，内部函数（inner function）的生命周期可能超过父级函数。 这时便会显示出JavaScript的一个特殊现象：闭包。 闭包为面向对象编程提供了另外一种有趣的封装方式，我们无需为私有变量声明`private`。
 ### 函数作用域
 程序设计语言中的作用域（scope）控制着变量和参数的可见性和生命周期。 它的重要性体现在避免命名冲突和自动内存管理两个方面，极大地减少了程序员的工作。
 多数编程语言都拥有块作用域（block scope），由一对大括号限定其中变量的作用域。 比如C++的变量只在块内可见，变量被定义时执行内存申请和构造函数， 控制流退出代码块后内部的变量又被析构和内存回收。
 不幸的是JavaScript提供了块语法，却不提供块作用域，而是提供函数作用域。 这意味着参数和变量在函数外部不可见，在函数内部始终可见。
 ### 闭包
 JavaScript允许在函数中嵌套定义函数，这意味着内部函数（inner function）也可以访问父级函数的上下文（包括参数和变量）。 有趣的是，有时内部函数拥有更长的生命周期。来一个典型的面试题：
-```js
+```javascript
 function f() {
-    for (var i=0; i<3, i++) {
+    for (var i = 0; i < 3, i++) {
         setTimeout(function () {
             console.log(i);
         }, 1000);
@@ -113,8 +113,8 @@ f(); // 333
 如果我们希望上述代码输出`123`，我们需要开启一个子作用域。而JavaScript只提供函数作用域，所以我们需要添加一层函数：
 ```js
 function f() {
-    for (var i=0; i<3; i++) {
-        !function(i){
+    for (var i = 0; i < 3; i++) {
+        !function (i) {
             setTimeout(function () {
                 console.log(i);
             }, 1000);
@@ -156,8 +156,8 @@ function foo() {
 function Counter() {
     var i = 0;
     return {
-        count: function(){ i++; }
-        get: function(){ return i; }
+        count: function () {i++;}
+        get: function () {return i;}
     }
 }
 var counter = Counter();

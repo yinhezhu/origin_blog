@@ -109,6 +109,14 @@ function (a = 2, b = 3) {
     1. rest参数后面，不能有其他参数，否则会报错
     2. rest参数不会被计算到函数的length属性中
 
+```javascript
+function test(a, b, ...c) {
+    console.log(c);
+}
+test(1, 2, 3, 4) // [3, 4]
+test.length // 2
+```
+
 #### 箭头函数
 
 箭头函数有几点需要注意：
@@ -139,8 +147,10 @@ ES6明确规定，所有ECMAScript的实现，都必须部署“尾调用优化�
 
 ```js
 class Super {
-    if (new.target === Super) {
-        throw new Error('不能单独实例化')
+    constructor() {
+        if (new.target === Super) {
+            throw new Error('不能单独实例化')
+        }
     }
 }
 class Sub extends Super {

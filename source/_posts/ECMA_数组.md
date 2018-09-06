@@ -27,7 +27,7 @@ var arr = []
 var arr = ['a', 'b', 'c']
 ```
 
-#### 【ES6】、Array.of()
+#### 【ES6】Array.of()
 
 * 描述：
 
@@ -36,7 +36,7 @@ var arr = ['a', 'b', 'c']
 * 参数：任意数量任意值
 * 返回值：创建的数组
 
-#### 【ES6】、Array.from(obj, func, context)
+#### 【ES6】Array.from(obj, func, context)
 
 * 描述：用于将 类数组对象(拥有length属性的对象) 和 可遍历对象(部署iterable接口的对象，包括 Set/Map) 转为真正的数组
 * 参数：
@@ -50,7 +50,7 @@ var arr = ['a', 'b', 'c']
 #### 使用 instanceof 操作符
 
 ```js
-if(value instanceof Array){
+if (value instanceof Array) {
     // 对数组执行某些操作
 }
 ```
@@ -58,7 +58,7 @@ if(value instanceof Array){
 #### 使用 Array.isArray() 方法
 
 ```js
-if(Array.isArray(value)){
+if (Array.isArray(value)) {
     // 对数组执行某些操作
 }
 ```
@@ -66,7 +66,7 @@ if(Array.isArray(value)){
 #### 使用 Object.prototype.toString.call()
 
 ```js
-if(Object.prototype.toString.call(obj) === '[object Array]'){
+if (Object.prototype.toString.call(obj) === '[object Array]'){
     // 对数组执行某些操作
 }
 ```
@@ -128,7 +128,7 @@ if(Object.prototype.toString.call(obj) === '[object Array]'){
 * 返回值：排序后的数组
 * 是否改变原数组：是
 
-####操作方法
+#### 操作方法
 
 ###### concat()
 * 描述：基于当前数组的所有项创建一个新数组
@@ -192,8 +192,8 @@ if(Object.prototype.toString.call(obj) === '[object Array]'){
 * 描述：在数组中查找某一项的位置 indexOf() 从前往后查找， lastIndexOf() 从后往前查找
 * 参数：
     ```
-    第一个参数：要查找的项
-	第二个参数：查找起点位置索引
+第一个参数：要查找的项
+第二个参数：查找起点位置索引
     ```
 * 返回值：返回查找项在数组中的位置，未找到返回-1
 <p class="tip">注意：在查找过程中使用全等操作符(===)</p>

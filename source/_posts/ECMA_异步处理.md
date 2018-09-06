@@ -15,17 +15,17 @@ category: "ECMA"
 假设我们有一个 `getData` 方法，用于异步获取数据，第一个参数为请求的 `url` 地址，第二个参数是回调函数，如下：
 
 ```js
-function getData (url, callBack) {
+function getData(url, callBack) {
     // 模拟发送网络请求
     setTimeout(() => {
         // 假设 res 就是返回的数据
-        var res = {
+        let res = {
             url: url,
             data: Math.random()
-        }
+        };
         // 执行回调，将数据作为参数传递
-        callBack(res)
-    }, 1000)
+        callBack(res);
+    }, 1000);
 }
 ```
 
@@ -33,14 +33,14 @@ function getData (url, callBack) {
 
 ```js
 getData('/page/1?param=123', (res1) => {
-    console.log(res1)
+    console.log(res1);
     getData(`/page/2?param=${res1.data}`, (res2) => {
-        console.log(res2)
+        console.log(res2);
         getData(`/page/3?param=${res2.data}`, (res3) => {
-            console.log(res3)
-        })
-    })
-})
+            console.log(res3);
+        });
+    });
+});
 ```
 
 通过上面的代码可以看出，第一次请求的 `url` 地址为：`/page/1?param=123`，返回结果为 `res1`。
@@ -58,16 +58,16 @@ getData('/page/1?param=123', (res1) => {
 现在我们使用 `Promise` 重新实现上面的案例，首先，我们要把异步请求数据的方法封装成 `Promise` ：
 
 ```js
-function getDataAsync (url) {
+function getDataAsync(url) {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
-            var res = {
+            let res = {
                 url: url,
                 data: Math.random()
-            }
-            resolve(res)
-        }, 1000)
-    })
+            };
+            resolve(res);
+        }, 1000);
+    });
 }
 ```
 
@@ -75,17 +75,17 @@ function getDataAsync (url) {
 
 ```js
 getDataAsync('/page/1?param=123')
-    .then(res1 => {
-        console.log(res1)
-        return getDataAsync(`/page/2?param=${res1.data}`)
-    })
-    .then(res2 => {
-        console.log(res2)
-        return getDataAsync(`/page/3?param=${res2.data}`)
-    })
-    .then(res3 => {
-        console.log(res3)
-    })
+.then(res1 => {
+    console.log(res1);
+    return getDataAsync(`/page/2?param=${res1.data}`);
+})
+.then(res2 => {
+    console.log(res2);
+    return getDataAsync(`/page/3?param=${res2.data}`);
+})
+.then(res3 => {
+    console.log(res3);
+});
 ```
 
 `then` 方法返回一个新的 `Promise` 对象，`then` 方法的链式调用避免了 `CallBack` 回调地狱。但也并不是完美，比如我们要添加很多 `then` 语句，
@@ -97,29 +97,29 @@ getDataAsync('/page/1?param=123')
 `getDataAsync` 方法不变，如下：
 
 ```js
-function getDataAsync (url) {
+function getDataAsync(url) {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
-            var res = {
+            let res = {
                 url: url,
                 data: Math.random()
-            }
-            resolve(res)
-        }, 1000)
-    })
+            };
+            resolve(res);
+        }, 1000);
+    });
 }
 ```
 
 业务代码如下：
 
 ```js
-async function getData () {
-    var res1 = await getDataAsync('/page/1?param=123')
-    console.log(res1)
-    var res2 = await getDataAsync(`/page/2?param=${res1.data}`)
-    console.log(res2)
-    var res3 = await getDataAsync(`/page/2?param=${res2.data}`)
-    console.log(res3)
+async function getData() {
+    let res1 = await getDataAsync('/page/1?param=123');
+    console.log(res1);
+    let res2 = await getDataAsync(`/page/2?param=${res1.data}`);
+    console.log(res2);
+    let res3 = await getDataAsync(`/page/2?param=${res2.data}`);
+    console.log(res3);
 }
 ```
 
@@ -131,61 +131,61 @@ async function getData () {
 首先异步函数依然是：
 
 ```js
-function getDataAsync (url) {
+function getDataAsync(url) {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
-            var res = {
+            let res = {
                 url: url,
                 data: Math.random()
-            }
-            resolve(res)
-        }, 1000)
-    })
+            };
+            resolve(res);
+        }, 1000);
+    });
 }
 ```
 
 使用 `Generator` 函数可以这样写：
 
 ```js
-function * getData () {
-    var res1 = yield getDataAsync('/page/1?param=123')
-    console.log(res1)
-    var res2 = yield getDataAsync(`/page/2?param=${res1.data}`)
-    console.log(res2)
-    var res3 = yield getDataAsync(`/page/2?param=${res2.data}`)
-    console.log(res3))
+function* getData() {
+    let res1 = yield getDataAsync('/page/1?param=123');
+    console.log(res1);
+    let res2 = yield getDataAsync(`/page/2?param=${res1.data}`);
+    console.log(res2);
+    let res3 = yield getDataAsync(`/page/2?param=${res2.data}`);
+    console.log(res3);
 }
 ```
 
 然后我们这样逐步执行：
 
 ```js
-var g = getData()
+let g = getData();
 g.next().value.then(res1 => {
     g.next(res1).value.then(res2 => {
         g.next(res2).value.then(() => {
-            g.next()
-        })
-    })
-})
+            g.next();
+        });
+    });
+});
 ```
 
 上面的代码，我们逐步调用遍历器的 `next()` 方法，由于每一个 `next()` 方法返回值的 `value` 属性为一个 `Promise` 对象，所以我们为其添加 `then` 方法，
 在 `then` 方法里面接着运行 `next` 方法挪移遍历器指针，直到 `Generator` 函数运行完成，实际上，这个过程我们不必手动完成，可以封装成一个简单的执行器：
 
 ```js
-function run (gen) {
-    var g = gen()
+function run(gen) {
+    let g = gen();
 
-    function next (data) {
-        var res = g.next(data)
-        if (res.done) return res.value
+    function next(data) {
+        let res = g.next(data);
+        if (res.done) return res.value;
         res.value.then((data) => {
-            next(data)
-        })
+            next(data);
+        });
     }
 
-    next()
+    next();
 
 }
 ```

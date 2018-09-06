@@ -64,7 +64,7 @@ cookie 是存在浏览器中的，如果一个 cookie 不是会话cookie，那�
 
 如下图：
 
-<img src="../../asset/img/cookie.png" width="800" />
+<img src="/static/img/cookie.png" width="800" />
 
 上图中展示了响应头的 `Set-Cookie` 字段中设置cookie的所有可选的标志：
 
@@ -131,46 +131,46 @@ key1=val1;key2=val2;key3=val3
 为了更直观和方便的操作cookie，我们通常封装对 `document.cookie` 的操作，下面的代码来自《JavaScript高程》，并做了相应的修改：
 
 ```js
-var cookieUtil = {
+let cookieUtil = {
     get: function (name) {
-        var cookieName = encodeURIComponent(name) + '=',
+        let cookieName = encodeURIComponent(name) + '=',
             cookieStart = document.cookie.indexOf(cookieName),
-            cookieValue = null
+            cookieValue = null;
 
         if (cookieStart > -1) {
-            var cookieEnd = document.cookie.indexOf(';', cookieStart)
+            let cookieEnd = document.cookie.indexOf(';', cookieStart);
             if (cookieEnd === -1) {
-                cookieEnd = document.cookie.length
+                cookieEnd = document.cookie.length;
             }
-            cookieValue = decodeURIComponent(document.cookie.substring(cookieStart + cookieName.length, cookieEnd))
+            cookieValue = decodeURIComponent(document.cookie.substring(cookieStart + cookieName.length, cookieEnd));
         }
-        return cookieValue
+        return cookieValue;
     },
     set: function (name, value, expires, domain, path, secure, HttpOnly) {
-        var cookieText = encodeURIComponent(name) + '=' + encodeURIComponent(value)
+        let cookieText = encodeURIComponent(name) + '=' + encodeURIComponent(value);
 
         if (expires instanceof Date) {
-            cookieText += '; expires=' + expires.toGMTString()
+            cookieText += '; expires=' + expires.toGMTString();
         }
         if (path) {
-            cookieText += '; path=' + path
+            cookieText += '; path=' + path;
         }
         if (domain) {
-            cookieText += '; domain=' + domain
+            cookieText += '; domain=' + domain;
         }
         if (secure) {
-            cookieText += '; secure'
+            cookieText += '; secure';
         }
         if (HttpOnly) {
-            cookieText += '; HttpOnly'
+            cookieText += '; HttpOnly';
         }
 
-        document.cookie = cookieText
+        document.cookie = cookieText;
     },
     unset: function (name, domain, path, secure, HttpOnly) {
-        this.set(name, '', new Date(0), domain, path, secure, HttpOnly)
+        this.set(name, '', new Date(0), domain, path, secure, HttpOnly);
     }
-}
+};
 ```
 
 #### cookie 与 sessionStorage 和 localStorage 的区别
