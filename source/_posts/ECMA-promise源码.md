@@ -69,8 +69,8 @@ class MyPromise {
             let cb;
             cb = this._fulfilledQueue.shift();
             while (cb) {
-                cb = this._fulfilledQueue.shift();
                 cb(value);
+                cb = this._fulfilledQueue.shift();
             }
         };
         // 依次执行失败队列中的函数，并清空队列
@@ -78,8 +78,8 @@ class MyPromise {
             let cb;
             cb = this._rejectedQueue.shift();
             while (cb) {
-                cb = this._rejectedQueue.shift();
                 cb(error);
+                cb = this._rejectedQueue.shift();
             }
         };
         /* 如果resolve的参数为Promise对象，则必须等待该Promise对象状态改变后,
@@ -108,8 +108,8 @@ class MyPromise {
         let cb;
         cb = this._rejectedQueue.shift();
         while (cb) {
-            cb = this._rejectedQueue.shift();
             cb(err);
+            cb = this._rejectedQueue.shift();
         }
     }
 
@@ -245,5 +245,4 @@ new MyPromise(resolve => {
 });
 console.log(2);
 // 依次输出：1 2 4 3 5 6
-
-```
+``
