@@ -10,7 +10,10 @@ category: "ECMA"
 
 
 ## 源码如下
+
+
 ```js
+
 let executeAsync;
 if (typeof process === 'object' && process.nextTick) {
     executeAsync = process.nextTick;
@@ -245,4 +248,5 @@ new MyPromise(resolve => {
 });
 console.log(2);
 // 依次输出：1 2 4 3 5 6
-``
+
+```
