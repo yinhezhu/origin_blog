@@ -21,6 +21,8 @@ category: "ECMA"
 
 ![](http://ou3l58em5.bkt.clouddn.com/varHeap.gif)
 
+
+
 ### 判断变量类型
 #### 1、`typeof `
 > `typeof ` 操作符返回的是类型字符串，它的返回值有6种取值：

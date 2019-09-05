@@ -13,7 +13,7 @@ HTTP协议是`Hyper Text Transfer Protocol`（超文本传输协议）的缩写,
 
 HTTP是一个基于`TCP/IP`通信协议来传递数据（HTML 文件, 图片文件, 查询结果等）。
 
-![](http://ou3l58em5.bkt.clouddn.com/http1.jpg)
+<img src="/static/img/abcd.png"/>
 
 ### 一、HTTP/0.9
 

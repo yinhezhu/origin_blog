@@ -10,7 +10,7 @@ category: "综合"
 
 我们先不了聊`HTTP`，`HTTPS`，我们先从一个聊天软件说起，我们要实现A能发一个hello消息给B：
 
-![](http://ou3l58em5.bkt.clouddn.com/https1.png)
+<img src="/static/img/http1.webp"/>
 
 如果我们要实现这个聊天软件，本文只考虑安全性问题，要实现
 
@@ -33,7 +33,7 @@ category: "综合"
 
 对于A与B这样的简单通信模型，我们很容易做出选择：
 
-![](http://ou3l58em5.bkt.clouddn.com/https2.png)
+<img src="/static/img/http2.webp"/>
 
 这就是对称加密算法，其中图中的密钥S同时扮演加密和解密的角色。具体细节不是本文范畴。
 
@@ -41,13 +41,13 @@ category: "综合"
 
 但是，在WWW环境下，我们的Web服务器的通信模型没有这么简单：
 
-![](http://ou3l58em5.bkt.clouddn.com/https3.png)
+<img src="/static/img/http3.webp"/>
 
 如果服务器端对所有的客户端通信都使用同样的对称加密算法，无异于没有加密。那怎么办呢？即能使用对称加密算法，又不公开密钥？请读者思考21秒钟。😜
 
 答案是：Web服务器与每个客户端使用不同的对称加密算法：
 
-![](http://ou3l58em5.bkt.clouddn.com/https4.png)
+<img src="/static/img/http4.webp"/>
 
 #### 如何确定对称加密算法
 
@@ -55,7 +55,7 @@ category: "综合"
 
 当然是通过协商。
 
-![](http://ou3l58em5.bkt.clouddn.com/https5.png)
+<img src="/static/img/http5.webp"/>
 
 但是，你协商的过程是没有加密的，还是会被中间人拦截。那我们再对这个协商过程进行对称加密就好了，那你对协商过程加密的加密还是没有加密，怎么办？再加密不就好了……好吧，进行鸡生蛋蛋生鸡的问题了。
 
@@ -63,7 +63,7 @@ category: "综合"
 
 新问题来了，如何对协商过程进行加密？密码学领域中，有一种称为“非对称加密”的加密算法，特点是私钥加密后的密文，只要是公钥，都可以解密，但是公钥加密后的密文，只有私钥可以解密。私钥只有一个人有，而公钥可以发给所有的人。
 
-![](http://ou3l58em5.bkt.clouddn.com/https6.png)
+<img src="/static/img/http6.webp"/>
 
 虽然服务器端向A、B……的方向还是不安全的，但是至少A、B向服务器端方向是安全的。
 
@@ -99,7 +99,7 @@ category: "综合"
 
 我画了张图方便理解：
 
-![](http://ou3l58em5.bkt.clouddn.com/https7.png)
+<img src="/static/img/http100.jpeg"/>
 
 显然，让每个客户端的每个浏览器默认保存所有网站的公钥是不现实的。
 
@@ -117,11 +117,11 @@ category: "综合"
 
 下图就是我们设计的第一版“数字证书”，证书中只有服务器交给第三方机构的公钥，而且这个公钥被第三方机构的私钥加密了：
 
-![](http://ou3l58em5.bkt.clouddn.com/https8.png)
+<img src="/static/img/http7.webp"/>
 
 如果能解密，就说明这个公钥没有被中间人调包。因为如果中间人使用自己的私钥加密后的东西传给客户端，客户端是无法使用第三方的公钥进行解密的。
 
-![](http://ou3l58em5.bkt.clouddn.com/https9.png)
+<img src="/static/img/http8.webp"/>
 
 话到此，我以为解决问题了。但是现实中`HTTPS`，还有一个数字签名的概念，我没法理解它的设计理由。
 
@@ -129,15 +129,15 @@ category: "综合"
 
 第三方机构向多家公司颁发证书的情况：
 
-![](http://ou3l58em5.bkt.clouddn.com/https10.png)
+<img src="/static/img/http9.webp"/>
 
 客户端能解密同一家第三机构颁发的所有证书：
 
-![](http://ou3l58em5.bkt.clouddn.com/https11.png)
+<img src="/static/img/http10.webp"/>
 
 最终导致其它持有同一家第三方机构证书的中间人可以进行调包：
 
-![](http://ou3l58em5.bkt.clouddn.com/https12.png)
+<img src="/static/img/http11.webp"/>
 
 #### 数字签名，解决同一机构颁发的不同证书被篡改问题
 
@@ -149,7 +149,7 @@ category: "综合"
 
 我们的客户端能不能采用这个机制呢？像这样：
 
-![](http://ou3l58em5.bkt.clouddn.com/https13.png)
+<img src="/static/img/http12.webp"/>
 
 可是，这个“第三方机构”到底是在哪呢？是一个远端服务？不可能吧？如果是个远端服务，整个交互都会慢了。所以，这个第三方机构的验证功能只能放在客户端的本地了。
 
@@ -167,11 +167,11 @@ category: "综合"
 
 证书的制作如图所示。证书中的“编号生成方法MD5”就是告诉客户端：你使用MD5对证书的内容求值就可以得到一个证书编号。
 
-![](http://ou3l58em5.bkt.clouddn.com/https14.png)
+<img src="/static/img/http13.webp"/>
 
 当客户端拿到证书后，开始对证书中的内容进行验证，如果客户端计算出来的证书编号与证书中的证书编号相同，则验证通过：
 
-![](http://ou3l58em5.bkt.clouddn.com/https15.png)
+<img src="/static/img/http14.webp"/>
 
 但是第三方机构的公钥怎么跑到了客户端的机器中呢？世界上这么多机器。
 
@@ -188,7 +188,7 @@ category: "综合"
 
 我们如何向CA申请呢？每个CA机构都大同小异，我在网上找了一个：
 
-![](http://ou3l58em5.bkt.clouddn.com/https16.png)
+<img src="/static/img/http15.webp"/>
 
 拿到证书后，我们就可以将证书配置到自己的服务器上了。那么如何配置？这是具体细节了，留给大家google了。
 
@@ -200,7 +200,7 @@ category: "综合"
 
 以下是一张`HTTPS`协议的真实交互图（从网上copy的，忘了从哪了，如果侵权麻烦告知）：
 
-![](http://ou3l58em5.bkt.clouddn.com/https17.png)
+<img src="/static/img/http30.jpeg"/>
 
 #### 能不能用一句话总结`HTTPS`？
 
@@ -227,4 +227,4 @@ category: "综合"
 
 一个中间人攻击能成功的前提条件是攻击者能将自己伪装成每一个参与会话的终端，并且不被其他终端识破。中间人攻击是一个（缺乏）相互认证的攻击。大多数的加密协议都专门加入了一些特殊的认证方法以阻止中间人攻击。例如，SSL协议可以验证参与通讯的一方或双方使用的证书是否是由权威的受信任的数字证书认证机构颁发，并且能执行双向身份认证。
 
-![](http://ou3l58em5.bkt.clouddn.com/https19.jpeg)
+<img src="/static/img/http31.jpeg"/>
