@@ -33,7 +33,7 @@ Nginx1.16.0安装详见 [CentOS7.3编译安装LNMP之(一)Nginx-1.16.0安装](h
 
 <img src="/static/img/nginx_1.png">
 
-具体内容详如下：
+具体内容详情如下：
 
 ```
 
@@ -58,8 +58,8 @@ worker_processes  1;		#允许生成的进程数，默认为1， 最大为cpu核�
 
 #2、events块：配置影响nginx服务器或与用户的网络连接。有每个进程的最大连接数，选取哪种事件驱动模型处理连接请求，是否允许同时接受多个网路连接，开启多个网络连接序列化等。
 events {
-	#use epoll;       #epoll是多路复用IO(I/O Multiplexing)中的一种方式,但是仅用于linux2.6以上内核,可以大大提高nginx的性能
-	#accept_mutex on;   #设置网路连接序列化，防止惊群现象发生，默认为on
+    use epoll;       #epoll是多路复用IO(I/O Multiplexing)中的一种方式,但是仅用于linux2.6以上内核,可以大大提高nginx的性能
+    #accept_mutex on;   #设置网路连接序列化，防止惊群现象发生，默认为on
     #multi_accept on;  #设置一个进程是否同时接受多个网络连接，默认为off
     worker_connections  1024; #单个后台worker process进程的最大并发链接数
 }
@@ -76,9 +76,9 @@ http {
     #access_log  logs/access.log  main;   #自定义服务日志
 
     sendfile        on;				#允许sendfile方式传输文件，默认为on，表示高效文件传输模式，可以在http块，server块，location块。
-	#sendfile_max_chunk 100k;  #每个进程每次调用传输数量不能大于设定的值，默认为0，即不设上限。
+    #sendfile_max_chunk 100k;  #每个进程每次调用传输数量不能大于设定的值，默认为0，即不设上限。
     #tcp_nopush     on;			#激活tcp_nopush参数可以允许把httpresponse header和文件的开始放在一个文件里发布，积极的作用是减少网络报文段的数量
-	# tcp_nodelay on; 			#激活tcp_nodelay，内核会等待将更多的字节组成一个数据包，从而提高I/O性能
+    # tcp_nodelay on; 			#激活tcp_nodelay，内核会等待将更多的字节组成一个数据包，从而提高I/O性能
     #keepalive_timeout  0;			#设置长连接超时时间，默认为75s，可以在http，server，location块。
     keepalive_timeout  65;
 
@@ -99,15 +99,15 @@ http {
     server {
         listen       80;		#端口号，
         server_name  localhost;		#域名 多个用空格隔开，  也可以是IP地址如
-		#root  /home/wwwroot/qinser   #站点根目录，可以是相对路径，也可以是绝对路径，此项目也可以放置的到 location /{ }里配置
-		#index index.php index.html index.htm;  #设置默认页 此项目也可以放置的到 location /{ }里配置
+        #root  /home/wwwroot/qinser   #站点根目录，可以是相对路径，也可以是绝对路径，此项目也可以放置的到 location /{ }里配置
+        #index index.php index.html index.htm;  #设置默认页 此项目也可以放置的到 location /{ }里配置
 
         #charset koi8-r;
 
         #access_log  logs/host.access.log  main;
 
         location / {
-		#	proxy_pass http://myweb;   proxy_pass  #请求转向myweb定义的服务器列表， 用于负载均衡，如果开启了，那么此处自己的站点就不能访问了
+            #	proxy_pass http://myweb;   proxy_pass  #请求转向myweb定义的服务器列表， 用于负载均衡，如果开启了，那么此处自己的站点就不能访问了
             root   /home/wwwroot/qinser;
             index index.php index.html index.htm;
         }
@@ -150,10 +150,6 @@ http {
 	include /usr/local/nginx/conf/vhost/*.conf
 
 }
-
-————————————————
-版权声明：本文为CSDN博主「暮云归」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。
-原文链接：https://blog.csdn.net/niuxitong/article/details/89327679
 ```
 
 ### 三、配置虚拟站点
