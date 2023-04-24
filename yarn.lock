@@ -139,6 +139,63 @@ aws4@^1.2.1:
   version "1.7.0"
   resolved "http://qui.qiyi.domain/npm/aws4/-/aws4-1.7.0.tgz#d4d0e9b9dbfca77bf08eeb0a8a471550fe39e289"
 
+babel-code-frame@^6.22.0, babel-code-frame@^6.26.0:
+  version "6.26.0"
+  resolved "https://registry.yarnpkg.com/babel-code-frame/-/babel-code-frame-6.26.0.tgz#63fd43f7dc1e3bb7ce35947db8fe369a3f58c74b"
+  dependencies:
+    chalk "^1.1.3"
+    esutils "^2.0.2"
+    js-tokens "^3.0.2"
+
+babel-eslint@^7.2.1:
+  version "7.2.3"
+  resolved "https://registry.yarnpkg.com/babel-eslint/-/babel-eslint-7.2.3.tgz#b2fe2d80126470f5c19442dc757253a897710827"
+  dependencies:
+    babel-code-frame "^6.22.0"
+    babel-traverse "^6.23.1"
+    babel-types "^6.23.0"
+    babylon "^6.17.0"
+
+babel-messages@^6.23.0:
+  version "6.23.0"
+  resolved "https://registry.yarnpkg.com/babel-messages/-/babel-messages-6.23.0.tgz#f3cdf4703858035b2a2951c6ec5edf6c62f2630e"
+  dependencies:
+    babel-runtime "^6.22.0"
+
+babel-runtime@^6.22.0, babel-runtime@^6.26.0:
+  version "6.26.0"
+  resolved "https://registry.yarnpkg.com/babel-runtime/-/babel-runtime-6.26.0.tgz#965c7058668e82b55d7bfe04ff2337bc8b5647fe"
+  dependencies:
+    core-js "^2.4.0"
+    regenerator-runtime "^0.11.0"
+
+babel-traverse@^6.23.1:
+  version "6.26.0"
+  resolved "https://registry.yarnpkg.com/babel-traverse/-/babel-traverse-6.26.0.tgz#46a9cbd7edcc62c8e5c064e2d2d8d0f4035766ee"
+  dependencies:
+    babel-code-frame "^6.26.0"
+    babel-messages "^6.23.0"
+    babel-runtime "^6.26.0"
+    babel-types "^6.26.0"
+    babylon "^6.18.0"
+    debug "^2.6.8"
+    globals "^9.18.0"
+    invariant "^2.2.2"
+    lodash "^4.17.4"
+
+babel-types@^6.23.0, babel-types@^6.26.0:
+  version "6.26.0"
+  resolved "https://registry.yarnpkg.com/babel-types/-/babel-types-6.26.0.tgz#a3b073f94ab49eb6fa55cd65227a334380632497"
+  dependencies:
+    babel-runtime "^6.26.0"
+    esutils "^2.0.2"
+    lodash "^4.17.4"
+    to-fast-properties "^1.0.3"
+
+babylon@^6.17.0, babylon@^6.18.0:
+  version "6.18.0"
+  resolved "https://registry.yarnpkg.com/babylon/-/babylon-6.18.0.tgz#af2f3b88fa6f5c1e4c634d1a0f8eac4f55b395e3"
+
 balanced-match@^1.0.0:
   version "1.0.0"
   resolved "http://qui.qiyi.domain/npm/balanced-match/-/balanced-match-1.0.0.tgz#89b4d199ab2bee49de164ea02b89ce462d71b767"
@@ -168,6 +225,10 @@ block-stream@*:
 bluebird@^3.0.6, bluebird@^3.2.2, bluebird@^3.4.0:
   version "3.5.1"
   resolved "http://qui.qiyi.domain/npm/bluebird/-/bluebird-3.5.1.tgz#d9551f9de98f1fcda1e683d17ee91a0602ee2eb9"
+
+bluebird@^3.5.0:
+  version "3.7.2"
+  resolved "https://registry.yarnpkg.com/bluebird/-/bluebird-3.7.2.tgz#9f229c15be272454ffa973ace0dbee79a1b0c36f"
 
 boolbase@~1.0.0:
   version "1.0.0"
@@ -267,6 +328,16 @@ cheerio@0.22.0:
     lodash.reject "^4.4.0"
     lodash.some "^4.4.0"
 
+cheerio@^0.19.0:
+  version "0.19.0"
+  resolved "https://registry.yarnpkg.com/cheerio/-/cheerio-0.19.0.tgz#772e7015f2ee29965096d71ea4175b75ab354925"
+  dependencies:
+    css-select "~1.0.0"
+    dom-serializer "~0.1.0"
+    entities "~1.1.1"
+    htmlparser2 "~3.8.1"
+    lodash "^3.2.0"
+
 chokidar@^1.5.2, chokidar@^1.6.0:
   version "1.7.0"
   resolved "http://qui.qiyi.domain/npm/chokidar/-/chokidar-1.7.0.tgz#798e689778151c8076b4b360e5edd28cda2bb468"
@@ -326,6 +397,10 @@ command-exists@^1.2.0:
   version "1.2.4"
   resolved "http://qui.qiyi.domain/npm/command-exists/-/command-exists-1.2.4.tgz#ae9e59d17793858c1f0ab0e43f10e7a2d9b276a8"
 
+commander@^5.1.0:
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/commander/-/commander-5.1.0.tgz#46abbd1652f8e059bddaef99bbdcb2ad9cf179ae"
+
 compressible@~2.0.13:
   version "2.0.13"
   resolved "http://qui.qiyi.domain/npm/compressible/-/compressible-2.0.13.tgz#0d1020ab924b2fdb4d6279875c7d6daba6baa7a9"
@@ -365,6 +440,10 @@ core-js@^1.1.1:
   version "1.2.7"
   resolved "http://qui.qiyi.domain/npm/core-js/-/core-js-1.2.7.tgz#652294c14651db28fa93bd2d5ff2983a4f08c636"
 
+core-js@^2.4.0:
+  version "2.6.12"
+  resolved "https://registry.yarnpkg.com/core-js/-/core-js-2.6.12.tgz#d9333dfa7b065e347cc5682219d6f690859cc2ec"
+
 core-util-is@1.0.2, core-util-is@~1.0.0:
   version "1.0.2"
   resolved "http://qui.qiyi.domain/npm/core-util-is/-/core-util-is-1.0.2.tgz#b5fd54220aa2bc5ab57aab7140c940754503c1a7"
@@ -386,6 +465,15 @@ css-parse@1.7.x:
   version "1.7.0"
   resolved "http://qui.qiyi.domain/npm/css-parse/-/css-parse-1.7.0.tgz#321f6cf73782a6ff751111390fc05e2c657d8c9b"
 
+css-select@~1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/css-select/-/css-select-1.0.0.tgz#b1121ca51848dd264e2244d058cee254deeb44b0"
+  dependencies:
+    boolbase "~1.0.0"
+    css-what "1.0"
+    domutils "1.4"
+    nth-check "~1.0.0"
+
 css-select@~1.2.0:
   version "1.2.0"
   resolved "http://qui.qiyi.domain/npm/css-select/-/css-select-1.2.0.tgz#2b3a110539c5355f1cd8d314623e870b121ec858"
@@ -394,6 +482,10 @@ css-select@~1.2.0:
     css-what "2.1"
     domutils "1.5.1"
     nth-check "~1.0.1"
+
+css-what@1.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/css-what/-/css-what-1.0.0.tgz#d7cc2df45180666f99d2b14462639469e00f736c"
 
 css-what@2.1:
   version "2.1.0"
@@ -413,9 +505,15 @@ dashdash@^1.12.0:
   dependencies:
     assert-plus "^1.0.0"
 
-debug@*, debug@2.6.9, debug@^2.2.0:
+debug@*:
+  version "4.3.4"
+  resolved "https://registry.yarnpkg.com/debug/-/debug-4.3.4.tgz#1319f6579357f2338d3337d2cdd4914bb5dcc865"
+  dependencies:
+    ms "2.1.2"
+
+debug@2.6.9, debug@^2.2.0, debug@^2.6.8:
   version "2.6.9"
-  resolved "http://qui.qiyi.domain/npm/debug/-/debug-2.6.9.tgz#5d128515df134ff327e90a4c93f4e077a536341f"
+  resolved "https://registry.yarnpkg.com/debug/-/debug-2.6.9.tgz#5d128515df134ff327e90a4c93f4e077a536341f"
   dependencies:
     ms "2.0.0"
 
@@ -462,13 +560,25 @@ domelementtype@~1.1.1:
   version "1.1.3"
   resolved "http://qui.qiyi.domain/npm/domelementtype/-/domelementtype-1.1.3.tgz#bd28773e2642881aec51544924299c5cd822185b"
 
+domhandler@2.3:
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/domhandler/-/domhandler-2.3.0.tgz#2de59a0822d5027fabff6f032c2b25a2a8abe738"
+  dependencies:
+    domelementtype "1"
+
 domhandler@^2.3.0:
   version "2.4.1"
   resolved "http://qui.qiyi.domain/npm/domhandler/-/domhandler-2.4.1.tgz#892e47000a99be55bbf3774ffea0561d8879c259"
   dependencies:
     domelementtype "1"
 
-domutils@1.5.1, domutils@^1.5.1:
+domutils@1.4:
+  version "1.4.3"
+  resolved "https://registry.yarnpkg.com/domutils/-/domutils-1.4.3.tgz#0865513796c6b306031850e175516baf80b72a6f"
+  dependencies:
+    domelementtype "1"
+
+domutils@1.5, domutils@1.5.1, domutils@^1.5.1:
   version "1.5.1"
   resolved "http://qui.qiyi.domain/npm/domutils/-/domutils-1.5.1.tgz#dcd8488a26f563d61079e48c9f7b7e32373682cf"
   dependencies:
@@ -493,6 +603,10 @@ encodeurl@~1.0.1, encodeurl@~1.0.2:
   version "1.0.2"
   resolved "http://qui.qiyi.domain/npm/encodeurl/-/encodeurl-1.0.2.tgz#ad3ff4c86ec2d029322f5a02c3a9a606c95b3f59"
 
+entities@1.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/entities/-/entities-1.0.0.tgz#b2987aa3821347fcde642b24fdfc9e4fb712bf26"
+
 entities@^1.1.1, entities@~1.1.1:
   version "1.1.1"
   resolved "http://qui.qiyi.domain/npm/entities/-/entities-1.1.1.tgz#6e5c2d0a5621b5dadaecef80b90edfb5cd7772f0"
@@ -508,6 +622,10 @@ escape-string-regexp@^1.0.2, escape-string-regexp@^1.0.5:
 esprima@^4.0.0:
   version "4.0.0"
   resolved "http://qui.qiyi.domain/npm/esprima/-/esprima-4.0.0.tgz#4499eddcd1110e0b218bacf2fa7f7f59f55ca804"
+
+esutils@^2.0.2:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/esutils/-/esutils-2.0.3.tgz#74d2eb4de0b8da1293711910d50775b9b710ef64"
 
 etag@~1.8.1:
   version "1.8.1"
@@ -672,6 +790,10 @@ glob@^6.0.1:
     once "^1.3.0"
     path-is-absolute "^1.0.0"
 
+globals@^9.18.0:
+  version "9.18.0"
+  resolved "https://registry.yarnpkg.com/globals/-/globals-9.18.0.tgz#aa3896b3e69b487f17e31ed2143d69a8e30c2d8a"
+
 graceful-fs@^4.1.2, graceful-fs@^4.1.3, graceful-fs@^4.1.4:
   version "4.1.11"
   resolved "http://qui.qiyi.domain/npm/graceful-fs/-/graceful-fs-4.1.11.tgz#0e8bdfe4d1ddb8854d64e04ea7c00e2a026e5658"
@@ -710,6 +832,12 @@ hawk@3.1.3, hawk@~3.1.3:
     hoek "2.x.x"
     sntp "1.x.x"
 
+hexo-asset-image@0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/hexo-asset-image/-/hexo-asset-image-0.0.3.tgz#88e9515673812f0106d73fe0acedd944f8a8a651"
+  dependencies:
+    cheerio "^0.19.0"
+
 hexo-bunyan@^1.0.0:
   version "1.0.0"
   resolved "http://qui.qiyi.domain/npm/hexo-bunyan/-/hexo-bunyan-1.0.0.tgz#b2106b26547b232f0195db863cb5d5ff8527fd36"
@@ -733,6 +861,18 @@ hexo-cli@^1.1.0:
     object-assign "^4.1.0"
     resolve "^1.5.0"
     tildify "^1.2.0"
+
+hexo-deployer-git@^0.3.1:
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/hexo-deployer-git/-/hexo-deployer-git-0.3.1.tgz#26b085ecc50e2cc99ecd33d56c254c5544c02d21"
+  dependencies:
+    babel-eslint "^7.2.1"
+    bluebird "^3.5.0"
+    chalk "^1.1.3"
+    hexo-fs "^0.2.0"
+    hexo-util "^0.6.0"
+    moment "^2.18.0"
+    swig "^1.4.2"
 
 hexo-front-matter@^0.2.2:
   version "0.2.3"
@@ -769,6 +909,12 @@ hexo-generator-index@^0.2.0:
   dependencies:
     hexo-pagination "0.0.2"
     object-assign "^4.0.1"
+
+hexo-generator-searchdb@^1.0.8:
+  version "1.4.1"
+  resolved "https://registry.yarnpkg.com/hexo-generator-searchdb/-/hexo-generator-searchdb-1.4.1.tgz#e33c9bd22130a6705673e889b6497fcc3fe80fa5"
+  dependencies:
+    nunjucks "^3.2.2"
 
 hexo-generator-tag@^0.2.0:
   version "0.2.0"
@@ -899,6 +1045,16 @@ htmlparser2@^3.9.1:
     inherits "^2.0.1"
     readable-stream "^2.0.2"
 
+htmlparser2@~3.8.1:
+  version "3.8.3"
+  resolved "https://registry.yarnpkg.com/htmlparser2/-/htmlparser2-3.8.3.tgz#996c28b191516a8be86501a7d79757e5c70c1068"
+  dependencies:
+    domelementtype "1"
+    domhandler "2.3"
+    domutils "1.5"
+    entities "1.0"
+    readable-stream "1.1"
+
 http-errors@~1.6.2:
   version "1.6.3"
   resolved "http://qui.qiyi.domain/npm/http-errors/-/http-errors-1.6.3.tgz#8b55680bb4be283a0b5bf4ea2e38580be1d9320d"
@@ -927,9 +1083,19 @@ inherits@2, inherits@2.0.3, inherits@^2.0.1, inherits@~2.0.0, inherits@~2.0.3:
   version "2.0.3"
   resolved "http://qui.qiyi.domain/npm/inherits/-/inherits-2.0.3.tgz#633c2c83e3da42a502f52466022480f4208261de"
 
+inherits@~2.0.1:
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/inherits/-/inherits-2.0.4.tgz#0fa2c64f932917c3433a0ded55363aae37416b7c"
+
 ini@~1.3.0:
   version "1.3.5"
   resolved "http://qui.qiyi.domain/npm/ini/-/ini-1.3.5.tgz#eee25f56db1c9ec6085e0c22778083f596abf927"
+
+invariant@^2.2.2:
+  version "2.2.4"
+  resolved "https://registry.yarnpkg.com/invariant/-/invariant-2.2.4.tgz#610f3c92c9359ce1db616e538008d23ff35158e6"
+  dependencies:
+    loose-envify "^1.0.0"
 
 invert-kv@^1.0.0:
   version "1.0.0"
@@ -1005,6 +1171,10 @@ is-typedarray@~1.0.0:
   version "1.0.0"
   resolved "http://qui.qiyi.domain/npm/is-typedarray/-/is-typedarray-1.0.0.tgz#e479c80858df0c1b11ddda6940f96011fcda4a9a"
 
+isarray@0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/isarray/-/isarray-0.0.1.tgz#8a18acfca9a8f4177e09abfc6038939b05d1eedf"
+
 isarray@1.0.0, isarray@~1.0.0:
   version "1.0.0"
   resolved "http://qui.qiyi.domain/npm/isarray/-/isarray-1.0.0.tgz#bb935d48582cba168c06834957a54a3e07124f11"
@@ -1026,6 +1196,14 @@ isobject@^3.0.1:
 isstream@~0.1.2:
   version "0.1.2"
   resolved "http://qui.qiyi.domain/npm/isstream/-/isstream-0.1.2.tgz#47e63f7af55afa6f92e1500e690eb8b8529c099a"
+
+"js-tokens@^3.0.0 || ^4.0.0":
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/js-tokens/-/js-tokens-4.0.0.tgz#19203fb59991df98e3a287050d4647cdeaf32499"
+
+js-tokens@^3.0.2:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/js-tokens/-/js-tokens-3.0.2.tgz#9866df395102130e38f7f996bceb65443209c25b"
 
 js-yaml@^3.6.1:
   version "3.11.0"
@@ -1139,6 +1317,14 @@ lodash.some@^4.4.0:
   version "4.6.0"
   resolved "http://qui.qiyi.domain/npm/lodash.some/-/lodash.some-4.6.0.tgz#1bb9f314ef6b8baded13b549169b2a945eb68e4d"
 
+lodash@^3.2.0:
+  version "3.10.1"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-3.10.1.tgz#5bf45e8e49ba4189e17d482789dfd15bd140b7b6"
+
+lodash@^4.17.4:
+  version "4.17.21"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
+
 lodash@^4.17.5, lodash@^4.2.1:
   version "4.17.5"
   resolved "http://qui.qiyi.domain/npm/lodash/-/lodash-4.17.5.tgz#99a92d65c0272debe8c96b6057bc8fbfa3bed511"
@@ -1146,6 +1332,12 @@ lodash@^4.17.5, lodash@^4.2.1:
 longest@^1.0.1:
   version "1.0.1"
   resolved "http://qui.qiyi.domain/npm/longest/-/longest-1.0.1.tgz#30a0b2da38f73770e8294a0d22e6625ed77d0097"
+
+loose-envify@^1.0.0:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/loose-envify/-/loose-envify-1.4.0.tgz#71ee51fa7be4caec1a63839f7e682d8132d30caf"
+  dependencies:
+    js-tokens "^3.0.0 || ^4.0.0"
 
 lower-case@^1.1.1:
   version "1.1.4"
@@ -1234,6 +1426,10 @@ moment-timezone@^0.5.14:
   version "2.22.0"
   resolved "http://qui.qiyi.domain/npm/moment/-/moment-2.22.0.tgz#7921ade01017dd45186e7fee5f424f0b8663a730"
 
+moment@^2.18.0:
+  version "2.29.4"
+  resolved "https://registry.yarnpkg.com/moment/-/moment-2.29.4.tgz#3dbe052889fe7c1b2ed966fcb3a77328964ef108"
+
 morgan@^1.6.1:
   version "1.9.0"
   resolved "http://qui.qiyi.domain/npm/morgan/-/morgan-1.9.0.tgz#d01fa6c65859b76fcf31b3cb53a3821a311d8051"
@@ -1247,6 +1443,10 @@ morgan@^1.6.1:
 ms@2.0.0:
   version "2.0.0"
   resolved "http://qui.qiyi.domain/npm/ms/-/ms-2.0.0.tgz#5608aeadfc00be6c2901df5f9861788de0d597c8"
+
+ms@2.1.2:
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/ms/-/ms-2.1.2.tgz#d09d1f357b443f493382a8eb3ccd183872ae6009"
 
 mv@~2:
   version "2.1.1"
@@ -1328,6 +1528,12 @@ npmlog@^4.0.2:
     gauge "~2.7.3"
     set-blocking "~2.0.0"
 
+nth-check@~1.0.0:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/nth-check/-/nth-check-1.0.2.tgz#b2bd295c37e3dd58a3bf0700376663ba4d9cf05c"
+  dependencies:
+    boolbase "~1.0.0"
+
 nth-check@~1.0.1:
   version "1.0.1"
   resolved "http://qui.qiyi.domain/npm/nth-check/-/nth-check-1.0.1.tgz#9929acdf628fc2c41098deab82ac580cf149aae4"
@@ -1348,6 +1554,14 @@ nunjucks@^3.1.2:
     yargs "^3.32.0"
   optionalDependencies:
     chokidar "^1.6.0"
+
+nunjucks@^3.2.2:
+  version "3.2.4"
+  resolved "https://registry.yarnpkg.com/nunjucks/-/nunjucks-3.2.4.tgz#f0878eef528ce7b0aa35d67cc6898635fd74649e"
+  dependencies:
+    a-sync-waterfall "^1.0.0"
+    asap "^2.0.3"
+    commander "^5.1.0"
 
 oauth-sign@~0.8.1:
   version "0.8.2"
@@ -1502,6 +1716,15 @@ rc@^1.1.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
+readable-stream@1.1:
+  version "1.1.13"
+  resolved "https://registry.yarnpkg.com/readable-stream/-/readable-stream-1.1.13.tgz#f6eef764f514c89e2b9e23146a75ba106756d23e"
+  dependencies:
+    core-util-is "~1.0.0"
+    inherits "~2.0.1"
+    isarray "0.0.1"
+    string_decoder "~0.10.x"
+
 readable-stream@^2.0.2, readable-stream@^2.0.6, readable-stream@^2.1.4:
   version "2.3.6"
   resolved "http://qui.qiyi.domain/npm/readable-stream/-/readable-stream-2.3.6.tgz#b11c27d88b8ff1fbe070643cf94b0c79ae1b0aaf"
@@ -1522,6 +1745,10 @@ readdirp@^2.0.0:
     minimatch "^3.0.2"
     readable-stream "^2.0.2"
     set-immediate-shim "^1.0.1"
+
+regenerator-runtime@^0.11.0:
+  version "0.11.1"
+  resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.11.1.tgz#be05ad7f9bf7d22e056f9726cee5017fbf19e2e9"
 
 regex-cache@^0.4.2:
   version "0.4.4"
@@ -1657,6 +1884,12 @@ sntp@1.x.x:
   dependencies:
     hoek "2.x.x"
 
+source-map@0.1.34:
+  version "0.1.34"
+  resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.1.34.tgz#a7cfe89aec7b1682c3b198d0acfb47d7d090566b"
+  dependencies:
+    amdefine ">=0.0.4"
+
 source-map@0.1.x:
   version "0.1.43"
   resolved "http://qui.qiyi.domain/npm/source-map/-/source-map-0.1.43.tgz#c24bc146ca517c1471f5dacbe2571b2b7f9e3346"
@@ -1704,6 +1937,10 @@ string-width@^1.0.1, string-width@^1.0.2:
     code-point-at "^1.0.0"
     is-fullwidth-code-point "^1.0.0"
     strip-ansi "^3.0.0"
+
+string_decoder@~0.10.x:
+  version "0.10.31"
+  resolved "https://registry.yarnpkg.com/string_decoder/-/string_decoder-0.10.31.tgz#62e203bc41766c6c28c9fc84301dab1c5310fa94"
 
 string_decoder@~1.1.1:
   version "1.1.1"
@@ -1773,6 +2010,13 @@ swig-templates@^2.0.2:
     optimist "~0.6"
     uglify-js "2.6.0"
 
+swig@^1.4.2:
+  version "1.4.2"
+  resolved "https://registry.yarnpkg.com/swig/-/swig-1.4.2.tgz#4085ca0453369104b5d483e2841b39b7ae1aaba5"
+  dependencies:
+    optimist "~0.6"
+    uglify-js "~2.4"
+
 tar-pack@^3.4.0:
   version "3.4.1"
   resolved "http://qui.qiyi.domain/npm/tar-pack/-/tar-pack-3.4.1.tgz#e1dbc03a9b9d3ba07e896ad027317eb679a10a1f"
@@ -1812,6 +2056,10 @@ titlecase@^1.1.2:
   version "1.1.2"
   resolved "http://qui.qiyi.domain/npm/titlecase/-/titlecase-1.1.2.tgz#78113d1108086b8326331a3247dea8f5a49ea853"
 
+to-fast-properties@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/to-fast-properties/-/to-fast-properties-1.0.3.tgz#b83571fa4d8c25b82e231b06e3a3055de4ca1a47"
+
 tough-cookie@~2.3.0:
   version "2.3.4"
   resolved "http://qui.qiyi.domain/npm/tough-cookie/-/tough-cookie-2.3.4.tgz#ec60cee38ac675063ffc97a5c18970578ee83655"
@@ -1836,6 +2084,15 @@ uglify-js@2.6.0:
     source-map "~0.5.1"
     uglify-to-browserify "~1.0.0"
     yargs "~3.10.0"
+
+uglify-js@~2.4:
+  version "2.4.24"
+  resolved "https://registry.yarnpkg.com/uglify-js/-/uglify-js-2.4.24.tgz#fad5755c1e1577658bb06ff9ab6e548c95bebd6e"
+  dependencies:
+    async "~0.2.6"
+    source-map "0.1.34"
+    uglify-to-browserify "~1.0.0"
+    yargs "~3.5.4"
 
 uglify-to-browserify@~1.0.0:
   version "1.0.2"
@@ -1955,3 +2212,12 @@ yargs@~3.10.0:
     cliui "^2.1.0"
     decamelize "^1.0.0"
     window-size "0.1.0"
+
+yargs@~3.5.4:
+  version "3.5.4"
+  resolved "https://registry.yarnpkg.com/yargs/-/yargs-3.5.4.tgz#d8aff8f665e94c34bd259bdebd1bfaf0ddd35361"
+  dependencies:
+    camelcase "^1.0.2"
+    decamelize "^1.0.0"
+    window-size "0.1.0"
+    wordwrap "0.0.2"
